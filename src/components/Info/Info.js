@@ -7,19 +7,6 @@ import "../../assets/style.css";
 const Info = () => {
   const [state, dispatch] = useModalContext();
 
-  const handleEvent = (event) => {
-    switch (event) {
-      case event.name === "skills":
-        return dispatch({
-          background: "hide",
-          visibility: "show",
-        });
-      // case event.name === "credentials":
-      //   return;
-      default:
-        return state;
-    }
-  };
   return (
     <div>
       <div>
@@ -72,7 +59,7 @@ const Info = () => {
         </div>
 
         <section>
-          <button onClick={handleEvent}>Skills</button>
+          <button>Skills</button>
         </section>
       </div>
     </div>
