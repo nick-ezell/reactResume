@@ -1,9 +1,25 @@
 import React from "react";
+import { useModalContext } from "../../utils/ModalContext";
 import github from "./GitHub-Mark-32px.png";
 import linkedIn from "./LI-In-Bug.png";
 import "../../assets/style.css";
 
 const Info = () => {
+  const [state, dispatch] = useModalContext();
+
+  const handleEvent = (event) => {
+    switch (event) {
+      case event.name === "skills":
+        return dispatch({
+          background: "hide",
+          visibility: "show",
+        });
+      // case event.name === "credentials":
+      //   return;
+      default:
+        return state;
+    }
+  };
   return (
     <div>
       <div>
@@ -56,29 +72,9 @@ const Info = () => {
         </div>
 
         <section>
-          <h2>Skills</h2>
+          <button onClick={handleEvent}>Skills</button>
         </section>
       </div>
-      {/* <div className="skills">
-        <ul>
-          <li>React/Hooks</li>
-          <li>Node/Express</li>
-          <li>HTML/HTML5</li>
-          <li>Javascript/ES6</li>
-        </ul>
-
-        <ul>
-          <li>CSS/SCSS</li>
-          <li>Bulma</li>
-          <li>Bootstrap</li>
-        </ul>
-
-        <ul>
-          <li>MySQL</li>
-          <li>Mongo.DB</li>
-          <li>Web/Server APIs (Rest)</li>
-        </ul>
-      </div> */}
     </div>
   );
 };

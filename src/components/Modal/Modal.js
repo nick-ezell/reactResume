@@ -1,9 +1,14 @@
-import React, { useContext } from "react";
-import ModalContext from "../../utils/ModalContext";
+import React, { useModalContext } from "react";
+
 import "../../assets/style.css";
 
 const Modal = () => {
-  return <div></div>;
+  const [state, dispatch] = useModalContext();
+  return (
+    <div className={state.visibility}>
+      <h1>Yo!</h1>
+    </div>
+  );
 };
 
 export default Modal;
