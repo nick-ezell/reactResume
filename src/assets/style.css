@@ -12,7 +12,6 @@ html {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100vw;
   text-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -20,7 +19,36 @@ html {
   flex-direction: column;
 }
 
-a {
+#gitHub,
+#linkedIn {
+  margin-right: 0.5em;
+}
+
+#gitHub {
+  border-radius: 100%;
+}
+
+#linkedIn {
+  height: 32px;
+  width: 36px;
+}
+
+.transitionSlow {
+  -webkit-box-shadow: 0 1px 2px #999;
+  box-shadow: 0 1px 2px #999;
+  -webkit-transition: -webkit-box-shadow 0.4s ease-in-out;
+  transition: -webkit-box-shadow 0.4s ease-in-out;
+  transition: box-shadow 0.4s ease-in-out;
+  transition: box-shadow 0.4s ease-in-out, -webkit-box-shadow 0.4s ease-in-out;
+}
+
+.transitionSlow:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* a {
   color: #000;
 }
 
@@ -74,34 +102,7 @@ hr {
   margin-left: 17em;
 }
 
-#gitHub,
-#linkedIn {
-  margin-right: 0.5em;
-}
 
-.make-it-slow {
-  -webkit-box-shadow: 0 1px 2px #999;
-  box-shadow: 0 1px 2px #999;
-  -webkit-transition: -webkit-box-shadow 0.4s ease-in-out;
-  transition: -webkit-box-shadow 0.4s ease-in-out;
-  transition: box-shadow 0.4s ease-in-out;
-  transition: box-shadow 0.4s ease-in-out, -webkit-box-shadow 0.4s ease-in-out;
-}
-
-.make-it-slow:hover {
-  cursor: pointer;
-  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-#gitHub {
-  border-radius: 100%;
-}
-
-#linkedIn {
-  height: 32px;
-  width: 36px;
-}
 
 .dropdown {
   margin-right: 0.5em;
@@ -199,5 +200,5 @@ li:before {
 
 section {
   width: 100%;
-}
+} */
 /* # sourceMappingURL=style.css.map */

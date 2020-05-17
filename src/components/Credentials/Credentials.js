@@ -1,18 +1,18 @@
 import React from "react";
-import "../assets/style.css";
+import "../../assets/style.css";
 
 const Credentials = () => {
   return (
-    <div classNames="education">
+    <div>
       <hr />
 
       <section>
-        <h2 id="dropdown2">Credentials</h2>
+        <h2>Credentials</h2>
       </section>
 
-      <div className="credsInfo">
-        <div classNames="list">
-          <ul classNames="hide2">
+      <div>
+        <div>
+          <ul>
             <li>
               <i>
                 <b>'Houston Coding Bootcamp'</b>
@@ -97,16 +97,6 @@ const Credentials = () => {
               </a>
             </li>
           </ul>
-
-          {/* <ul classNames="hide2">
-          <li>
-            <i>
-              <b>General Education Diploma</b>
-            </i>{" "}
-            - State of Alabama (Alabama Community College System Board of
-            Trustees), February 2012-March 2012
-          </li>
-        </ul> */}
         </div>
       </div>
     </div>

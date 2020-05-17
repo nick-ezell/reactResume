@@ -6,9 +6,9 @@ import "../../assets/style.css";
 const Info = () => {
   return (
     <div>
-      <div className="info col-md-12">
-        <p id="nav">
-          nickolasezell@gmail.com <span id="decorate">|</span>{" "}
+      <div>
+        <p>
+          nickolasezell@gmail.com{" "}
           <a
             href="https://linkedin.com/in/nick-ezell"
             target="_blank"
@@ -18,11 +18,10 @@ const Info = () => {
               alt="LinkedIn"
               src={linkedIn}
               id="linkedIn"
-              className="make-it-slow"
+              className="transitionSlow"
             ></img>
             https://linkedin.com/in/nick-ezell
-          </a>
-          <span id="decorate">|</span>{" "}
+          </a>{" "}
           <a
             href="https://github.com/nick-ezell"
             target="_blank"
@@ -32,14 +31,14 @@ const Info = () => {
               alt="GitHub"
               src={github}
               id="gitHub"
-              className="make-it-slow"
+              className="transitionSlow"
             ></img>{" "}
             https://github.com/nick-ezell
           </a>
         </p>
         <br />
 
-        <div className="statement">
+        <div>
           <p>
             Programmer with strong front-end skills, a background in customer
             service and an eye for aesthetics in design. I have a strong sense
@@ -49,42 +48,36 @@ const Info = () => {
             combination of technical expertise and emotional intelligence allows
             me to be a unique team member that will bring efficiency and value
             to your team; coupled with experience in collaborative,
-            deadline-driven environments make me a strong addition to any data
-            analysis team. I seek a role in web development at a company where I
+            deadline-driven environments, make me a strong addition to any data
+            analysis team. I seek a role in Web Development at a company where I
             can learn and continue my journey to master the ever-changing craft
             of code.
           </p>
         </div>
 
         <section>
-          <h2 id="dropdown1">Skills</h2>
+          <h2>Skills</h2>
         </section>
       </div>
       <div className="skills">
-        <div className="list">
-          <ul className="hide1">
-            <li>React/Hooks</li>
-            <li>Node/Express</li>
-            <li>HTML/HTML5</li>
-            <li>Javascript/ES6</li>
-          </ul>
-        </div>
+        <ul>
+          <li>React/Hooks</li>
+          <li>Node/Express</li>
+          <li>HTML/HTML5</li>
+          <li>Javascript/ES6</li>
+        </ul>
 
-        <div className="list">
-          <ul className="hide1">
-            <li>CSS/SCSS</li>
-            <li>Bulma</li>
-            <li>Bootstrap</li>
-          </ul>
-        </div>
+        <ul>
+          <li>CSS/SCSS</li>
+          <li>Bulma</li>
+          <li>Bootstrap</li>
+        </ul>
 
-        <div className="list">
-          <ul className="hide1">
-            <li>MySQL</li>
-            <li>Mongo.DB</li>
-            <li>Web/Server APIs (Rest)</li>
-          </ul>
-        </div>
+        <ul>
+          <li>MySQL</li>
+          <li>Mongo.DB</li>
+          <li>Web/Server APIs (Rest)</li>
+        </ul>
       </div>
     </div>
   );
