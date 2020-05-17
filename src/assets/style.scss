@@ -1,0 +1,122 @@
+@import "./mixins";
+@import "./variables";
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+#container {
+  @include displayFlex;
+  width: 100vw;
+  text-align: center;
+  flex-direction: column;
+}
+a {
+  color: #000;
+}
+p {
+  @include displayFlex;
+}
+h1,
+#decorate {
+  color: #4aaaa5;
+  padding: 0 1em 0 1em;
+}
+i {
+  color: #000;
+}
+hr {
+  width: 80vw;
+}
+.name {
+  width: 100vw;
+}
+.info {
+  width: 80vw;
+}
+#gitHub,
+#linkedIn {
+  margin-right: 0.5em;
+}
+
+.make-it-slow {
+  box-shadow: 0 1px 2px #999;
+  transition: box-shadow 0.4s ease-in-out;
+}
+
+.make-it-slow:hover {
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+#gitHub {
+  border-radius: 100%;
+}
+#linkedIn {
+  height: 32px;
+  width: 36px;
+}
+.dropdown {
+  margin-right: 0.5em;
+  height: 0.53em;
+  width: 0.53em;
+}
+.showArrow {
+  transform: rotate(270deg);
+}
+.hideArrow {
+  transform: rotate(0deg);
+}
+.hideList {
+  display: none;
+}
+.showList {
+  display: initial;
+}
+.skills {
+  width: 80vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-left: 12.5em;
+}
+h2 {
+  width: 100%;
+  text-align: left;
+  color: #4aaaa5;
+}
+.list,
+ul {
+  width: min-content;
+}
+.list {
+  width: 33.33%;
+  margin: 0;
+}
+ul {
+  margin: 0.75em 0;
+  padding: 0 1em;
+  list-style: none;
+}
+li:before {
+  content: "";
+  border-color: transparent #111;
+  border-style: solid;
+  border-width: 0.35em 0 0.35em 0.45em;
+  display: block;
+  height: 0;
+  width: 0;
+  left: -1em;
+  top: 0.9em;
+  position: relative;
+}
+.education {
+  width: 80vw;
+  flex-wrap: wrap;
+  flex-direction: row;
+  @include displayFlex;
+}
+#education {
+  display: inline;
+}
+section {
+  width: 100%;
+}

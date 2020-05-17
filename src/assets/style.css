@@ -1,0 +1,203 @@
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+#root {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100vw;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+a {
+  color: #000;
+}
+
+p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+h1,
+#decorate {
+  color: #4aaaa5;
+  padding: 0 1em 0 1em;
+}
+
+i {
+  color: #000;
+}
+
+hr {
+  width: 80vw;
+}
+
+.name {
+  text-align: center;
+}
+
+#nav {
+  margin-left: 10em;
+}
+
+.info {
+  width: fit-content;
+}
+
+.statement,
+.credsInfo {
+  width: 50vw;
+}
+.statement {
+  margin-left: 13em;
+}
+
+.credsInfo {
+  margin-left: 17em;
+}
+
+#gitHub,
+#linkedIn {
+  margin-right: 0.5em;
+}
+
+.make-it-slow {
+  -webkit-box-shadow: 0 1px 2px #999;
+  box-shadow: 0 1px 2px #999;
+  -webkit-transition: -webkit-box-shadow 0.4s ease-in-out;
+  transition: -webkit-box-shadow 0.4s ease-in-out;
+  transition: box-shadow 0.4s ease-in-out;
+  transition: box-shadow 0.4s ease-in-out, -webkit-box-shadow 0.4s ease-in-out;
+}
+
+.make-it-slow:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#gitHub {
+  border-radius: 100%;
+}
+
+#linkedIn {
+  height: 32px;
+  width: 36px;
+}
+
+.dropdown {
+  margin-right: 0.5em;
+  height: 0.53em;
+  width: 0.53em;
+}
+
+.showArrow {
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+.hideArrow {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.hideList {
+  display: none;
+}
+
+.showList {
+  display: initial;
+}
+
+.skills {
+  width: 80vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-left: 12.5em;
+}
+
+h2 {
+  width: 100%;
+  text-align: left;
+  color: #4aaaa5;
+}
+
+.list,
+ul {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: fit-content;
+}
+
+.list {
+  width: 33.33%;
+  margin: 0;
+}
+
+ul {
+  margin: 0.75em 0;
+  padding: 0 1em;
+  list-style: none;
+}
+
+li:before {
+  content: "";
+  border-color: transparent #111;
+  border-style: solid;
+  border-width: 0.35em 0 0.35em 0.45em;
+  display: block;
+  height: 0;
+  width: 0;
+  left: -1em;
+  top: 0.9em;
+  position: relative;
+}
+
+.education {
+  width: 80vw;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+section {
+  width: 100%;
+}
+/* # sourceMappingURL=style.css.map */
