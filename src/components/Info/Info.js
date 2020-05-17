@@ -59,7 +59,7 @@ const Info = () => {
           <h2>Skills</h2>
         </section>
       </div>
-      <div className="skills">
+      {/* <div className="skills">
         <ul>
           <li>React/Hooks</li>
           <li>Node/Express</li>
@@ -78,7 +78,7 @@ const Info = () => {
           <li>Mongo.DB</li>
           <li>Web/Server APIs (Rest)</li>
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 };

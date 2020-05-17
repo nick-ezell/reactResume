@@ -10,7 +10,7 @@ const Credentials = () => {
         <h2>Credentials</h2>
       </section>
 
-      <div>
+      {/* <div>
         <div>
           <ul>
             <li>
@@ -98,7 +98,7 @@ const Credentials = () => {
             </li>
           </ul>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
