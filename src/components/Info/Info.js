@@ -1,12 +1,10 @@
 import React from "react";
-import { useModalContext } from "../../utils/ModalContext";
 import github from "./GitHub-Mark-32px.png";
 import linkedIn from "./LI-In-Bug.png";
+import Skills from "../Skills/Skills";
 import "../../assets/style.css";
 
 const Info = () => {
-  const [state, dispatch] = useModalContext();
-
   return (
     <div>
       <div>
@@ -57,11 +55,8 @@ const Info = () => {
             of code.
           </p>
         </div>
-
-        <section>
-          <button>Skills</button>
-        </section>
       </div>
+      <Skills />
     </div>
   );
 };
