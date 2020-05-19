@@ -2,7 +2,7 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 
-#root {
+/* #root {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,7 +17,7 @@ html {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-}
+} */
 
 #gitHub,
 #linkedIn {
@@ -48,6 +48,11 @@ html {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
+button {
+  border-radius: 50%;
+  height: 15em;
+  width: 15em;
+}
 /* a {
   color: #000;
 }

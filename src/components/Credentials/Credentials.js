@@ -25,16 +25,14 @@ const Credentials = () => {
     }
   };
   return (
-    <div>
-      <hr />
-
+    <div className="col-lg-6">
       <section>
         <button name={toggledState.button} onClick={handleCreds}>
           Credentials
         </button>
       </section>
 
-      <div className={toggledState.credentials}>
+      <div className={toggledState.credentials + " col-lg-4"}>
         <div>
           <div>
             <i>

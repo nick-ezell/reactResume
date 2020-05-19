@@ -3,7 +3,7 @@ import "../../assets/style.css";
 
 const Header = () => {
   return (
-    <div className="col-md-12 col-sm-12">
+    <div className="row">
       <h1>
         Nickolas&nbsp;<i>'Nick'</i>&nbsp;&nbsp;Ezell
       </h1>
