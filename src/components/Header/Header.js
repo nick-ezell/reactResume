@@ -3,11 +3,10 @@ import "../../assets/style.css";
 
 const Header = () => {
   return (
-    <div className="row">
+    <div className="row nameHeader">
       <h1>
         Nickolas&nbsp;<i>'Nick'</i>&nbsp;&nbsp;Ezell
       </h1>
-      <hr />
     </div>
   );
 };

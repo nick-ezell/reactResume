@@ -49,9 +49,9 @@ function reducer(state, action) {
     //Once our buttons have been clicked, we will be accessing our lists of skills
     //if frontend
     case "frontend":
-      switch (state.frontend) {
+      switch (state.frontend === "hide") {
         //if frontend is show
-        case "show":
+        case state.frontend === "show":
           return {
             ...state,
             //Change to hide
@@ -66,13 +66,15 @@ function reducer(state, action) {
 
             frontendskills: "show",
             backendskills: "hide",
+            button: "closed",
+            credentials: "hide",
           };
       }
     //Case for backend
     case "backend":
-      switch (state.backend) {
+      switch (state.backend === "hide") {
         //if show
-        case "show":
+        case state.backend === "show":
           return {
             ...state,
             //Change to hide
@@ -81,20 +83,38 @@ function reducer(state, action) {
           };
         //By default change to show
         default:
-          return { ...state, frontendskills: "hide", backendskills: "show" };
-      }
-
-    case "credentials":
-      switch (state.button) {
-        case "open":
-          return { ...state, button: "closed", credentials: "hide" };
-        default:
           return {
             ...state,
-            button: "open",
-            credentials: "show",
+            frontendskills: "hide",
+            backendskills: "show",
+            button: "closed",
+            credentials: "hide",
           };
       }
+
+    case "closed":
+      return {
+        ...state,
+        skills: "hide",
+        frontend: "hide",
+        backend: "hide",
+        frontendskills: "hide",
+        backendskills: "hide",
+        button: "open",
+        credentials: "show",
+      };
+
+    case "open":
+      return {
+        ...state,
+        skills: "hide",
+        frontend: "hide",
+        backend: "hide",
+        frontendskills: "hide",
+        backendskills: "hide",
+        button: "closed",
+        credentials: "hide",
+      };
 
     default:
       console.log("Carol Baskin definitely did it 🐯");

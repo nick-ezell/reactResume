@@ -4,7 +4,7 @@ import linkedIn from "./LI-In-Bug.png";
 
 const Contact = () => {
   return (
-    <div>
+    <div className="row">
       <p>
         nickolasezell@gmail.com{" "}
         <a

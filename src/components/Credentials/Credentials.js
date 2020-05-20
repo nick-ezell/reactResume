@@ -1,34 +1,9 @@
 import React from "react";
 import "../../assets/style.css";
-// import { useSkillContext } from "../../utils/SkillsState";
+import { useSkillContext } from "../../utils/SkillsState";
 
 const Credentials = () => {
-  // const [state, dispatch] = useSkillContext();
-  // console.log(state);
-  const buttonState = React.createContext({
-    button: "closed",
-    credentials: "hide",
-  });
-  //Access point into the created context
-  const useButtonState = React.useContext(buttonState);
-  //Functions for using and making changes
-  const [toggledState, setToggledState] = React.useState(useButtonState);
-
-  const handleCreds = (event) => {
-    switch (event.target.name) {
-      case "open":
-        setToggledState({
-          button: "closed",
-          credentials: "hide",
-        });
-        break;
-      default:
-        setToggledState({
-          button: "open",
-          credentials: "show",
-        });
-    }
-  };
+  const [state] = useSkillContext();
 
   // const handleClick = (event) => {
   //   dispatch({
@@ -37,13 +12,8 @@ const Credentials = () => {
   // };
 
   return (
-    <div className="col-lg-6">
-      <section>
-        <button name={toggledState.button} onClick={handleCreds}>
-          Credentials
-        </button>
-      </section>
-      <div className={toggledState.credentials + " col-lg-4"}>
+    <div>
+      <div className={state.credentials}>
         <div>
           <div>
             <i>
