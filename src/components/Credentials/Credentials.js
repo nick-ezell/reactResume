@@ -5,15 +5,9 @@ import { useSkillContext } from "../../utils/SkillsState";
 const Credentials = () => {
   const [state] = useSkillContext();
 
-  // const handleClick = (event) => {
-  //   dispatch({
-  //     type: event.target.name,
-  //   });
-  // };
-
   return (
-    <div>
-      <div className={state.credentials}>
+    <div className="col-lg-12">
+      <div className={state.credentials + " creds"}>
         <div>
           <div>
             <i>

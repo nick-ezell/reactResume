@@ -2,7 +2,7 @@ import React from "react";
 
 const BrandStatement = () => {
   return (
-    <div className="row">
+    <div className="row statement col-lg-12">
       <p>
         Programmer with strong front-end skills, a background in customer
         service and an eye for aesthetics in design. I have a strong sense of

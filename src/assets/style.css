@@ -1,5 +1,8 @@
 html {
   font-family: "Montserrat", sans-serif;
+}
+
+body {
   background-image: url("../images/backgroundImage.jpg");
 }
 
@@ -53,9 +56,50 @@ button {
   border-radius: 50%;
   height: 12em;
   width: 12em;
+  text-transform: uppercase;
+  background: #4aaaa5;
+  color: #fff;
+  font-size: 1em;
+  -webkit-box-shadow: 0 1px 2px #999;
+  box-shadow: 0 1px 2px #999;
+  -webkit-transition: -webkit-box-shadow 0.4s ease-in-out;
+  transition: -webkit-box-shadow 0.4s ease-in-out;
+  transition: box-shadow 0.4s ease-in-out;
+  transition: box-shadow 0.4s ease-in-out, -webkit-box-shadow 0.4s ease-in-out;
 }
+
+button:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
 a {
   color: #000;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.nameHeader {
+  background: #4aaaa5;
+}
+
+.header,
+.contact {
+  margin-bottom: 2em;
+}
+
+.contact {
+  padding-top: 2em;
+}
+
+.info {
+  background-color: #fff;
+  padding-bottom: 4em;
 }
 
 /* # sourceMappingURL=style.css.map */

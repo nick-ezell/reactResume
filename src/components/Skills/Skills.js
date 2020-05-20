@@ -13,7 +13,7 @@ const Skills = () => {
 
   return (
     <>
-      <div className="row">
+      <div className="row center col-lg-12">
         <button
           name="frontend"
           className={state.frontend}
@@ -27,22 +27,32 @@ const Skills = () => {
         </button>
       </div>
 
-      <div className="row skills">
-        <ul className={state.frontendskills}>
-          <li>React/Hooks</li>
-          <li>CSS/SCSS</li>
-          <li>Bulma</li>
-          <li>Bootstrap</li>
-          <li>HTML/HTML5</li>
-          <li>Javascript/ES6</li>
-        </ul>
+      <div className="row skills col-lg-12">
+        <div className={state.frontendskills}>
+          <br />
+          React/Hooks
+          <br />
+          CSS/SCSS
+          <br />
+          Bulma
+          <br />
+          Bootstrap
+          <br />
+          HTML/HTML5
+          <br />
+          Javascript/ES6
+        </div>
 
-        <ul className={state.backendskills}>
-          <li>Node/Express</li>
-          <li>MySQL</li>
-          <li>Mongo.DB</li>
-          <li>Web/Server APIs (Rest)</li>
-        </ul>
+        <div className={state.backendskills}>
+          <br />
+          Node/Express
+          <br />
+          MySQL
+          <br />
+          Mongo.DB
+          <br />
+          Web/Server APIs (Rest)
+        </div>
       </div>
     </>
   );

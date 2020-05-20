@@ -10,7 +10,7 @@ const Buttons = () => {
   };
   console.log(state.skills);
   return (
-    <div className="row">
+    <div className="row col-lg-12">
       <button name={state.skills} onClick={handleClick}>
         Skills
       </button>

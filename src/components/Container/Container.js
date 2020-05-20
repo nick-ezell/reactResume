@@ -12,14 +12,15 @@ import { SkillsProvider } from "../../utils/SkillsState";
 const Container = () => {
   return (
     <SkillsProvider>
-      <div className="row ">
-        <div className="row ">
+      <div className="row col-lg-12">
+        <div className="row header">
           <Header />
         </div>
-        <div className="row ">
-          <Contact />
-        </div>
-        <div className="row ">
+
+        <div className="row info col-lg-12">
+          <div className="row contact col-lg-12">
+            <Contact />
+          </div>
           <BrandStatement />
           <Buttons />
           <Skills />
