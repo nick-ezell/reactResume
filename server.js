@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3001;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 // Static directory
-app.use(express.static("client"));
+app.use(express.static("public"));
 
 // Start the API server
 app.listen(PORT, function () {
