@@ -1,12 +1,17 @@
 import React from "react";
 import "../../assets/style.css";
+// import { useSkillContext } from "../../utils/SkillsState";
 
 const Credentials = () => {
+  // const [state, dispatch] = useSkillContext();
+  // console.log(state);
   const buttonState = React.createContext({
     button: "closed",
     credentials: "hide",
   });
+  //Access point into the created context
   const useButtonState = React.useContext(buttonState);
+  //Functions for using and making changes
   const [toggledState, setToggledState] = React.useState(useButtonState);
 
   const handleCreds = (event) => {
@@ -24,6 +29,13 @@ const Credentials = () => {
         });
     }
   };
+
+  // const handleClick = (event) => {
+  //   dispatch({
+  //     type: event.target.name,
+  //   });
+  // };
+
   return (
     <div className="col-lg-6">
       <section>
@@ -31,7 +43,6 @@ const Credentials = () => {
           Credentials
         </button>
       </section>
-
       <div className={toggledState.credentials + " col-lg-4"}>
         <div>
           <div>

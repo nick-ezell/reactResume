@@ -1,17 +1,16 @@
 import React from "react";
 import "./App.css";
 import "./assets/style.css";
-import Header from "./components/Header/Header";
-import Info from "./components/Info/Info";
+import Container from "./components/Container/Container";
+import { SkillsProvider } from "./utils/SkillsState";
 
 function App() {
   return (
-    <div>
+    <SkillsProvider>
       <div className="App col-lg-12">
-        <Header />
-        <Info />
+        <Container />
       </div>
-    </div>
+    </SkillsProvider>
   );
 }
 
